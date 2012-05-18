@@ -1,0 +1,47 @@
+Global setup:
+
+ Set up git
+  git config --global user.name "Your Name"
+  git config --global user.email mowgli.boss@yahoo.co.uk
+      
+
+Next steps:
+
+  mkdir test1
+  cd test1
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:mowboss/test1.git
+  git push -u origin master
+      
+
+Existing Git Repo?
+
+  cd existing_git_repo
+  git remote add origin git@github.com:mowboss/test1.git
+  git push -u origin master
+      
+-------------------------
+
+Importing a new project
+	$ tar xzf project.tar.gz
+	$ cd project
+	$ git init
+
+Git will reply
+
+Initialized empty Git repository in .git/
+
+You’ve now initialized the working directory—you may notice a new directory created, named ".git".
+Next, tell git to take a snapshot of the contents of all files under the current directory (note the .), with git add:
+
+	git add .
+
+This snapshot is now stored in a temporary staging area which git calls the "index". 
+You can permanently store the contents of the index in the repository with git commit:
+
+	$ git commit
+
+This will prompt you for a commit message. You’ve now stored the first version of your project in git.
